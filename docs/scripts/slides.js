@@ -1,17 +1,23 @@
 // One method per module
 function schoolSlides() {
-  return ['00-school/00-TITLE.md', '00-school/speaker-jef.md'];
+  return [
+    '00-school/welcome_school.md',
+    '00-school/speaker_jch.md',
+    '00-school/planning.md',
+  ];
 }
 
 function introSlides() {
-  return ['intro/00-TITLE.md'];
+  return ['01-introduction/airflow.md'];
 }
 
 function formation() {
   return [
     //
     ...schoolSlides(), //
-    ...introSlides() //
+    ...introSlides(), //
+    '02-architecture/operators.md',
+    '03-operators/operators.md',
   ].map(slidePath => {
     return { path: slidePath };
   });
