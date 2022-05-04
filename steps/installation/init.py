@@ -73,6 +73,7 @@ for filename in filenames:
 #####################
 logger.info('Dump database')
 con = engine.raw_connection()
+os.makedirs('db', exist_ok=True)
 with open('db/brazilian-ecommerce.sql', 'w') as f:
     for line in con.iterdump():
         f.write('%s\n' % line)
