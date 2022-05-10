@@ -11,7 +11,6 @@ function introSlides() {
   return [
     '01-airflow-intro/00-TITLE.md',
     '01-airflow-intro/01-intro-airflow.md',
-    '01-airflow-intro/01-intro-orchestrator.md',
     '01-airflow-intro/02-airflow-ui.md',
     '01-airflow-intro/03-history.md',
     '01-airflow-intro/04-intro-orchestrator.md',
