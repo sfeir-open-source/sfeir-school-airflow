@@ -1,7 +1,7 @@
 {
-  "name": "sfeirschoolxxx",
+  "name": "sfeirschoolairflow",
   "version": "1.0.0",
-  "description": "Sfeir School XXX with revealJS",
+  "description": "Sfeir School Airflow with revealJS",
   "scripts": {
     "sass": "node-sass ./scss/slides.scss -o ./css/ --source-map=true --watch=\"scss\" --recursive=\"scss\"",
     "sass-once": "node-sass ./scss/slides.scss -o ./css/ --source-map=true ",
@@ -17,7 +17,8 @@
     "url": "git+https://github.com/sfeir-open-source/sfeir-school-template.git"
   },
   "keywords": [
-    "xxx",
+    "airflow",
+    "python",
     "sfeir"
   ],
   "author": "jefbinomed",
