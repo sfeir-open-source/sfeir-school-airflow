@@ -1,25 +1,16 @@
-from datetime import datetime, timedelta
-from airflow import DAG
+from airflow import DAG # IMPORTANT
+
+# from datetime import datetime, timedelta
 
 from airflow.operators.bash import BashOperator
 
 with DAG(
         'hello_world',
-        default_args={
-            'depends_on_past': False,
-            'email': ['airflow@example.com'],
-            'email_on_failure': False,
-            'email_on_retry': False,
-            'retries': 1,
-            'retry_delay': timedelta(minutes=5),
-        },
         description='A simple Hello World',
-        schedule_interval=timedelta(days=1),
         start_date=datetime(2021, 1, 1),
         catchup=False,
-        tags=['example'],
 ) as dag:
-    t1 = BashOperator(
+    t1 = BashOperator( # changer en pythonoperator
         task_id='print_date',
         bash_command='date',
     )
@@ -31,7 +22,7 @@ with DAG(
         retries=3,
     )
 
-    t3 = BashOperator(
+    t3 = BashOperator( # bloc à écrire au choix avec un python ou un bash
         task_id='hello',
         depends_on_past=False,
         bash_command='echo "hello_world"',
