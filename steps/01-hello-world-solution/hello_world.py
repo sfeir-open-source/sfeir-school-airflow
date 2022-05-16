@@ -1,6 +1,6 @@
 from airflow import DAG # IMPORTANT
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
@@ -8,6 +8,10 @@ from airflow.operators.python import PythonOperator
 
 def return_true():
   return True
+
+def hello_world():
+  print("Hello World")
+  return
 
 with DAG(
         'hello_world',
@@ -27,7 +31,15 @@ with DAG(
         retries=3,
     )
 
-    # TODO: écrire un Operateur affichant "Hello World" dans la console de log
-    t3 = ?
+    t3 = BashOperator(
+        task_id='hello',
+        depends_on_past=False,
+        bash_command='echo "hello_world"',
+    )
 
-    t1 >> t2 >> t3
+    t4 = PythonOperator(
+      task_id="print_hello_world",
+      python_callable=hello_world
+    )
+
+    t1 >> t2 >> t3 >> t4
