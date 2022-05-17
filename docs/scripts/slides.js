@@ -30,7 +30,7 @@ function basicConcepts() {
     '03-basic-concepts/00-TITLE.md',
     '03-basic-concepts/01-dag.md',
     '03-basic-concepts/02-operators.md',
-    '03-basic-concepts/03-scheduler.md',
+    '03-basic-concepts/04-scheduler.md',
   ];
 }
 
