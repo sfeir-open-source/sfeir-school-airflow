@@ -22,7 +22,7 @@ c'est à dire
 <!-- .slide: -->
 # Qu'est ce qu'un DAG ?
 
-- dans un DAG, on chaîne des **tâches** (task)
+- dans un DAG, on définit des **tâches** (task) que l'on chaîne
 - une tâche dans Airflow = un **appel** à un **opérateur** (operator)
 - on **ordonne** les tâches **chronologiquement**
 
@@ -30,7 +30,7 @@ c'est à dire
 ##==##
 <!-- .slide: -->
 # Un exemple de DAG
-![ui](./assets/images/dag_example.png)
+![dag example](./assets/images/dag_example.png)
 
 
 ##==##
