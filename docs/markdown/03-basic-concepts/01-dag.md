@@ -24,6 +24,7 @@ c'est à dire
 
 - dans un DAG, on chaîne des **tâches** (task)
 - une tâche dans Airflow = un **appel** à un **opérateur** (operator)
+- on **ordonne** les tâches **chronologiquement**
 
 
 ##==##

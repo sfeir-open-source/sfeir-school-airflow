@@ -1,13 +1,15 @@
 # Les opérateurs
 
-- un opérateur (operator) = modèle (ou template) de tâche pour effectuer une action spécifique
+- un opérateur (operator) = **modèle** (ou template) de tâche pour effectuer une action spécifique
 - l’action peut s’exécuter sur un système/application/service tier(ce) à Airflow
 - utilisation de "Hooks" pour communiquer avec l'extérieur
 
 
 ##==##
 <!-- .slide: -->
+# Les tâches
 
+- une tâche = 
 
 ##==##
 <!-- .slide: -->
@@ -52,3 +54,7 @@ print_hello_world = PythonOperator(
 ##==##
 <!-- .slide: -->
 # 
+
+- multitude d'opérateurs existants
+- dédié à tout type de services
+- possibilité d'écrire ses propres opérateurs

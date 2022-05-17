@@ -7,4 +7,4 @@
 
 - basé sur **python**
 - Workflows **As Code**
-x- interface graphique de gestion
+- interface graphique de gestion
