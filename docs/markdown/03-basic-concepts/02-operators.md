@@ -47,3 +47,8 @@ print_hello_world = PythonOperator(
 <!-- .slide: -->
 # Exemples d'opérateurs
 - BigQueryToGCSOperator
+
+
+##==##
+<!-- .slide: -->
+# 

@@ -6,7 +6,5 @@
 ## un **orchestrateur**
 
 - basé sur **python**
-
 - Workflows **As Code**
-
-- interface graphique de gestion
+x- interface graphique de gestion

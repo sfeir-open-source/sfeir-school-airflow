@@ -8,6 +8,7 @@ un Workflow = ensemble de tâches orchestrées les unes à la suite des autres
 # Qu'est ce qu'un DAG ?
 
 - un **DAG** = un **Workflow** dans Airflow
+
 - DAG = **D**irected **A**cyclic **G**raph
 </br></br>
 c'est à dire
@@ -27,5 +28,18 @@ c'est à dire
 
 ##==##
 <!-- .slide: -->
-# Voici un exemple de DAG
+# Un exemple de DAG
 ![ui](./assets/images/dag_example.png)
+
+
+##==##
+<!-- .slide: -->
+
+PLUSIEURS EXEMPLES
+
+
+##==##
+<!-- .slide: -->
+# Comment créer un DAG ?
+
+bout de code pour init

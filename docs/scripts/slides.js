@@ -14,6 +14,7 @@ function airflowIntro() {
     '01-airflow-intro/02-airflow-ui.md',
     '01-airflow-intro/03-history.md',
     '01-airflow-intro/04-intro-orchestrator.md',
+    '01-airflow-intro/05-why-airflow.md',
   ];
 }
 
